@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>蒙班点名</title>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="css/dianming.css" />
+	</head>
+
+	<body>
+		<div class="outer">
+			<div id="name"></div>
+			<button>开始</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var divs = document.getElementsByTagName('div')[1];
+		var btn = document.getElementsByTagName("button")[0];
+		var flag = true,
+			timer = null;
+		var arr = ["20142104350苏曼1",
+			"20142104351布吐格其",
+			"20142104352宝苏德",
+			"20142104353白音布和1",
+			"20142104354园园",
+			"20142104355苏丽娜",
+			"20142104356兰光明",
+			"20142104357特日格勒",
+			"20142104358韩婷婷0",
+			"20142104359包玲玲",
+			"20142104360淑琴",
+			"20142104361苏龙嘎",
+			"20142104362黄心仪",
+			"20142104363阿斯娜",
+			"20142104364高小芳",
+			"20142104365赛汉其其格",
+			"20142104366张芳芳",
+			"20142104367道日娜",
+			"20142104368道日娜",
+			"20142104369吉雅0",
+			"20142104370道日娜",
+			"20142104372乌恩1",
+			"20142104373陶古斯0",
+			"20142104374希吉尔",
+			"20142104375黄国祥0",
+			"20142104376芳芳",
+			"20142104377那顺朝好日",
+			"20142104378乌嫩吉亚嘎",
+			"20142104379孟丽0",
+			"20142104380朝乐门",
+			"20142104381阿嘎如",
+			"20142104382阿日根扎",
+			"20142104383吴彩云",
+			"20142104384道日敖",
+			"20142104385塔娜苏布达",
+			"20142104386好日娃",
+			"20142104387朝格吉日嘎拉",
+			"20142104388李特日格乐",
+			"20142104389齐雪梅",
+			"20142104390阿拉坦乌拉",
+			"20142104391阿荣",
+			"20142104392希力德格",
+			"20142104393阿秘拉",
+			"20142104394苏日古格",
+			"20142104395包永成",
+			"20142104396马金龙",
+			"20142104397桂小亮",
+			"20142104398巴德玛",
+			"20142104399彩霞"
+		]; //自行更改文字
+		btn.onclick = function() {
+			if (flag) {
+				timer = setInterval(function() {
+					divs.innerHTML = ram();
+				}, 20)
+				btn.innerHTML = "停止";
+				flag = false;
+			} else {
+				clearInterval(timer);
+				btn.innerHTML = "开始";
+				flag = true;
+			}
+		}
+
+		function ram() {
+			var x = Math.floor(Math.random() * arr.length);
+			var result = arr[x];
+			return result;
+		}
+	</script>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>form中的lable标签</title>
+	</head>
+
+	<body>
+		<form>
+			你的性别？<br>
+			<label for="male">男</label>
+			<!--label的作用就是点击“男”这个字时就相当于点击“男”后面的圆点-->
+			<input type="radio" name="sex" id="male" />
+
+			<label for="female">女</label>
+			<input type="radio" name="sex" id="female" />
+			<br /> 你对什么运动感兴趣？
+			<br>
+			<input type="checkbox" name "checkbox1" value="跑步">跑步
+			<input type="checkbox" name "checkbox2" value="打球" checked="checked">打球
+			<input type="checkbox" name "checkbox3" value="登山" checked="checked">登山
+			<input type="checkbox" name "checkbox4" value="健身">健身<br>
+			<label for="email">输入你的邮箱地址</label>
+			<input type="email" id="email" placeholder="Enter email">
+			<input type="reset" value="重置">
+		</form>
+	</body>
+
+</html>

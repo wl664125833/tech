@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.outer {
+	background: -webkit-linear-gradient(red, blue);
+	margin: 10px auto;
+}
+
+#name {
+	height: 250px;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 250px;
+	font-family: "微软雅黑";
+	font-size: 40px;
+	color: #FFF;
+}
+
+button {
+	display: block;
+	width: 100px;
+	height: 50px;
+	font-size: 25px;
+	text-align: center;
+	margin: 200px auto 0;
+}

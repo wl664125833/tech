@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>汉班点名</title>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="css/dianming.css" />
+	</head>
+
+	<body>
+		<div class="outer">
+			<div id="name"></div>
+			<button>开始</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var divs = document.getElementsByTagName('div')[1];
+		var btn = document.getElementsByTagName("button")[0];
+		var flag = true,
+			timer = null;
+		var arr = ["20141101985张晓焕",
+			"20141103219孙玉莹",
+			"20141103220王艳茹0",
+			"20141103221格日勒",
+			"20141103222李万婧",
+			"20141103223吴萨仁格日乐0",
+			"20141103224王宇祯",
+			"20141103225于双源",
+			"20141103226张聪",
+			"20141103227王欣悦",
+			"20141103228孙婉贞",
+			"20141103229李昕容",
+			"20141103230辛羽",
+			"20141103231程璐",
+			"20141103232李天骄",
+			"20141103233燕丽萍0",
+			"20141103234安溪露0",
+			"20141103235郭建强",
+			"20141103236于浩华",
+			"20141103237李静文",
+			"20141103238张燕鸿",
+			"20141103239王艳玲",
+			"20141103241李佳璐",
+			"20141103242王善舆",
+			"20141103243侯俊臣",
+			"20141103244肖鹏影",
+			"20141103245张晗",
+			"20141103246沈素平",
+			"20141103247刘璐璐",
+			"20141103248刘娜",
+			"20141103249李梦雪",
+			"20141103250张永臻",
+			"20141103251王佳星",
+			"20141103252赵帅",
+			"20141103253王晴",
+			"20141105872黄向英",
+			"20141105873邓辉0",
+			"20141105874吴月艺",
+			"20141105875李阳月",
+			"20141105911赵雅楠",
+			"20141105912韩倩倩",
+			"20141105913高晓娜",
+			"20141105914邵春节",
+			"20141105915李欣",
+			"20141106016柳璇",
+			"20141106017张泽凌",
+			"20141106018张贺",
+			"20141106019王雨薇",
+			"20141106020董苗苗"
+		]; //自行更改文字
+		btn.onclick = function() {
+			if (flag) {
+				timer = setInterval(function() {
+					divs.innerHTML = ram();
+				}, 20)
+				btn.innerHTML = "停止";
+				flag = false;
+			} else {
+				clearInterval(timer);
+				btn.innerHTML = "开始";
+				flag = true;
+			}
+		}
+
+		function ram() {
+			var x = Math.floor(Math.random() * arr.length);
+			var result = arr[x];
+			return result;
+		}
+	</script>
+
+</html>
