@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>onkeydown 事件</title>
+		<script>
+			function displayResult() {
+				var x;
+				if (window.event) // IE8 及更早IE版本
+				{
+					x = event.keyCode;
+				} else if (event.which) // IE9/Firefox/Chrome/Opera/Safari
+				{
+					x = event.which;
+				}
+				var keychar = String.fromCharCode(x);
+				alert("按键 " + keychar + " 被按下");
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<p>当用户在输入域按下按键时触发函数。 该功能提醒按下的键。</p>
+
+		<input type="text" onkeydown="displayResult()">
+
+	</body>
+
+</html>

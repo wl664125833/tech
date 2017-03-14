@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>onblur 事件</title>
+
+	<head>
+		<script>
+			function upperCase() {
+				var x = document.getElementById("fname").value
+				document.getElementById("fname").value = x.toUpperCase()
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<p>输入您的姓名，然后移动光标/选项卡到输入框外：</p>
+		输入你的英文姓名（鼠标移开后小写会转换为大写）: <input type="text" name="fname" id="fname" onblur="upperCase()">
+
+	</body>
+
+</html>

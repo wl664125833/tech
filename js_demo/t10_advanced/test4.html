@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>在一个无穷循环中的计时事件</title>
+		<script>
+			var c = 0;
+			var t;
+			var timer_is_on = 0;
+
+			function timedCount() {
+				document.getElementById('txt').value = c;
+				c = c + 1;
+				t = setTimeout("timedCount()", 1000);
+			}
+
+			function doTimer() {
+				if (!timer_is_on) {
+					timer_is_on = 1;
+					timedCount();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="button" value="开始计数!" onClick="doTimer()">
+			<input type="text" id="txt">
+		</form>
+		<p>单击按钮，输入框将从0开始一直计数。</p>
+	</body>
+
+</html>
