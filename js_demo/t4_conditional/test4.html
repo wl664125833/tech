@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>随机链接</title>
+	</head>
+
+	<body>
+
+		<p id="demo"></p>
+		<script>
+			var r = Math.random();
+			var x = document.getElementById("demo")
+			if (r > 0.5) {
+				x.innerHTML = "<a href='http://www.baidu.com'>百度</a>";
+			} else {
+				x.innerHTML = "<a href='http://www.imnu.edu.cn'>师大</a>";
+			}
+		</script>
+
+	</body>
+
+</html>
