@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>替换字符串中的字符 - replace()</title>
+	</head>
+
+	<body>
+
+		<p>单击按钮将段落中“imnu”替换成“wanglei”：</p>
+		<p id="demo">Visit Microsoft!</p>
+		<button onclick="myFunction()">点我</button>
+		<script>
+			function myFunction() {
+				var str = document.getElementById("demo").innerHTML;
+				var n = str.replace("imnu", "wanglei");
+				document.getElementById("demo").innerHTML = n;
+			}
+		</script>
+
+	</body>
+
+</html>
