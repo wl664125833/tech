@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>返回字符串中指定文本首次出现的位置 - indexOf()方法</title>
+	</head>
+
+	<body>
+
+		<p id="demo">单击按钮来定位指定文本首次出现的位置。</p>
+		<button onclick="myFunction()">点我</button>
+		<script>
+			function myFunction() {
+				var str = "Hello world, welcome to the universe.";
+				var n = str.indexOf("welcome");
+				document.getElementById("demo").innerHTML = n;
+			}
+		</script>
+
+	</body>
+
+</html>
