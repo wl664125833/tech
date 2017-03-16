@@ -2,6 +2,8 @@ listData=
 [
 	{
 		"name": "课堂实例",
+		"iconOpen":"css/ztree.3.5.26//zTreeStyle/img/diy/1_open.png", 
+		"iconClose":"css/ztree.3.5.26//zTreeStyle/img/diy/1_close.png",
 		"open": true,
 		"children": [
 			{
@@ -145,6 +147,7 @@ listData=
 		]
 	}, {
 		"name": "教程",
+		"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/2.png",
 		"children": [
 			{
 				"name": "ch2",
@@ -189,6 +192,7 @@ listData=
 		]
 	}, {
 		"name": "点名",
+		"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/8.png",
 		"children": [
 			{
 				"name": "汉班点名",
@@ -201,6 +205,7 @@ listData=
 		]
 	},{
 		"name": "相关学习网站",
+		"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Chrome_11_16px.png",
 		"children": [
 			{
 				"name": "菜鸟教程",
@@ -211,6 +216,30 @@ listData=
 			},{
 				"name":	"课程源码",
 				"url":	"https://github.com/wl664125833/tech"
+			}
+		]
+	},{
+		"name":"学生项目",
+		"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/student_girl_light_16px.png",
+		"children":[
+			{
+				"name":"蒙班",
+				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Mongolia_16px.png",
+				"children":[
+					{
+						"name":	"课程源码",
+						"url":	"https://github.com/wl664125833/tech"
+					}
+				]
+			},{
+				"name":"汉班",
+				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/lantern_16px.png",
+				"children":[
+					{
+						"name":	"课程源码",
+						"url":	"https://github.com/wl664125833/tech"
+					}
+				]
 			}
 		]
 	}
