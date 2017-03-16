@@ -1,7 +1,7 @@
 listData=
 [
 	{
-		"name": "实例",
+		"name": "课堂实例",
 		"open": true,
 		"children": [
 			{
@@ -155,6 +155,36 @@ listData=
 			},{
 				"name": "ch4",
 				"url": "html/tech/ch4.html"
+			},{
+				"name":"JavaScript实例",
+				"children": [
+					{
+						"name":"基础",
+						"children":[
+							{
+								"name":"用JavaScript输出文本",
+								"url":"js_demo/t1_base/test1.html"
+							},{
+								"name":"用JavaScript改变HTML元素",
+								"url":"js_demo/t1_base/test2.html"
+							},{
+								"name":"一个外部JavaScript",
+								"url":"js_demo/t1_base/test3.html"
+							}
+						]
+					},{
+						"name":"注释",
+						"children":[
+							{
+								"name":"JavaScript 单行注释",
+								"url":"js_demo/t2_annotation/test3.html"
+							},{
+								"name":"JavaScript 多行注释",
+								"url":"js_demo/t2_annotation/test4.html"
+							}
+						]
+					}
+				]
 			}
 		]
 	}, {
