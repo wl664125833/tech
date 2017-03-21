@@ -319,9 +319,9 @@ listData = [{
 				"name": "提示框",
 				"url": "js_demo/t7_msgbox/test4.html"
 			}]
-		},{
-			"name":"网页事件",
-			"children":[{
+		}, {
+			"name": "网页事件",
+			"children": [{
 				"name": "onclick事件",
 				"url": "js_demo/t8_event/test1.html"
 			}, {
@@ -357,6 +357,18 @@ listData = [{
 			}, {
 				"name": "onkeyup 事件",
 				"url": "js_demo/t8_event/test12.html"
+			}]
+		}, {
+			"name": "错误与异常",
+			"children": [{
+				"name": "try...catch 语句",
+				"url": "js_demo/t9_error/test1.html"
+			}, {
+				"name": "带有确认框的 try...catch 语句",
+				"url": "js_demo/t9_error/test2.html"
+			}, {
+				"name": "onerror 事件",
+				"url": "js_demo/t9_error/test3.html"
 			}]
 		}]
 	}]
