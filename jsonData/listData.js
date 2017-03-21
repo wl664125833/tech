@@ -218,6 +218,9 @@ listData=
 				"name": "ch4",
 				"url": "html/tech/ch4.html"
 			},{
+				"name": "ch5",
+				"url": "html/tech/ch5.html"
+			},{
 				"name":	"web前端知识结构",
 				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 				"url":	"html/tech/front.html"
@@ -242,11 +245,25 @@ listData=
 						"name":"注释",
 						"children":[
 							{
+								"name":"JavaScript 语句",
+								"url":"js_demo/t2_annotation/test1.html"
+							},{
+								"name":"JavaScript 代码块",
+								"url":"js_demo/t2_annotation/test2.html"
+							},{
 								"name":"JavaScript 单行注释",
 								"url":"js_demo/t2_annotation/test3.html"
 							},{
 								"name":"JavaScript 多行注释",
 								"url":"js_demo/t2_annotation/test4.html"
+							}
+						]
+					},{
+						"name":"变量",
+						"children":[
+							{
+								"name":"声明一个变量，为它赋值，然后显示出来",
+								"url":"js_demo/t3_variable/test1.html"
 							}
 						]
 					}
