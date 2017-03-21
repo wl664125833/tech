@@ -7,7 +7,7 @@ listData=
 		"open": true,
 		"children": [
 			{
-				"name": "ch1",
+				"name": "ch1-html,css,javasrcipt初体验",
 				"children": [
 					{
 						"name": "test1",
@@ -21,7 +21,7 @@ listData=
 					}
 				]
 			}, {
-				"name": "ch2",
+				"name": "ch2-html标签一",
 				"children": [
 					{
 						"name": "test1",
@@ -65,7 +65,7 @@ listData=
 					}
 				]
 			}, {
-				"name": "ch3",
+				"name": "ch3-html标签2",
 				"children": [
 					{
 						"name": "test1",
@@ -109,7 +109,7 @@ listData=
 					}
 				]
 			},{
-				"name": "ch4",
+				"name": "ch4-html标签3",
 				"children": [
 					{
 						"name": "test1",
@@ -141,6 +141,65 @@ listData=
 					}
 				]
 			},{
+				"name": "ch5-css-选择器",
+				"children": [
+					{
+						"name": "test1",
+						"url": "html/ch5/test1.html"
+					}, {
+						"name": "test2",
+						"url": "html/ch5/test2.html"
+					}, {
+						"name": "test3",
+						"url": "html/ch5/test3.html"
+					}, {
+						"name": "test4",
+						"url": "html/ch5/test4.html"
+					}, {
+						"name": "test5",
+						"url": "html/ch5/test5.html"
+					}, {
+						"name": "test6",
+						"url": "html/ch5/test6.html"
+					}, {
+						"name": "test7",
+						"url": "html/ch5/test7.html"
+					}, {
+						"name": "test8",
+						"url": "html/ch5/test8.html"
+					}, {
+						"name": "test9",
+						"url": "html/ch5/test9.html"
+					}, {
+						"name": "test10",
+						"url": "html/ch5/test10.html"
+					}, {
+						"name": "test11",
+						"url": "html/ch5/test11.html"
+					}, {
+						"name": "test12",
+						"url": "html/ch5/test12.html"
+					}, {
+						"name": "test13",
+						"url": "html/ch5/test13.html"
+					}, {
+						"name": "test14",
+						"url": "html/ch5/test14.html"
+					}, {
+						"name": "test15",
+						"url": "html/ch5/test15.html"
+					}, {
+						"name": "test16",
+						"url": "html/ch5/test16.html"
+					}, {
+						"name": "test17",
+						"url": "html/ch5/test17.html"
+					}, {
+						"name": "test18",
+						"url": "html/ch5/test18.html"
+					}
+				]
+			},{
 				"name": "没有子节点",
 				"isParent": true
 			}
@@ -160,6 +219,7 @@ listData=
 				"url": "html/tech/ch4.html"
 			},{
 				"name":	"web前端知识结构",
+				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 				"url":	"html/tech/front.html"
 			},{
 				"name":"JavaScript实例",
@@ -227,7 +287,7 @@ listData=
 		"children":[
 			{
 				"name":"蒙班",
-				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Mongolia_16px.png",
+				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/Horse_16px.png",
 				"children":[
 					{
 						"name": "20142104350苏曼",
@@ -380,7 +440,7 @@ listData=
 				]
 			},{
 				"name":"汉班",
-				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/lantern_16px.png",
+				"icon":"css/ztree.3.5.26/zTreeStyle/img/diy/cow_ox_bull_cattle_16px.png",
 				"children":[
 					{
 						"name": "20141101985张晓焕",

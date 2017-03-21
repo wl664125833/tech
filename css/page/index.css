@@ -12,16 +12,20 @@
 	height: 50px;
 }
 #middle{
-	
-}*/
+	height: 500px;
+}
 #midLeft{
+	overflow: auto;
 	width: 200px;
+	float: left;
 }
 #midRigth{
 	float: left;
-	width: 600px;
-	position: absolute;
+	background-color: #00B83F;
+}
+.content_wrap{
+	width: auto;
 }
 a>span{
 	font-size: 15px !important;
-}
+}*/
