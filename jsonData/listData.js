@@ -2,7 +2,7 @@ listData = [{
 	"name": "课堂实例",
 	"iconOpen": "css/ztree.3.5.26//zTreeStyle/img/diy/1_open.png",
 	"iconClose": "css/ztree.3.5.26//zTreeStyle/img/diy/1_close.png",
-	"open": true,
+//	"open": true,
 	"children": [{
 		"name": "ch1-html,css,javasrcipt初体验",
 		"children": [{
