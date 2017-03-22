@@ -370,6 +370,36 @@ listData = [{
 				"name": "onerror 事件",
 				"url": "js_demo/t9_error/test3.html"
 			}]
+		}, {
+			"name": "高级",
+			"children": [{
+				"name": "cookie",
+				"url": "js_demo/t10_advanced/test1.html"
+			}, {
+				"name": "简单的计时",
+				"url": "js_demo/t10_advanced/test2.html"
+			}, {
+				"name": "另一个简单的计时",
+				"url": "js_demo/t10_advanced/test3.html"
+			}, {
+				"name": "在一个无穷循环中的计时事件",
+				"url": "js_demo/t10_advanced/test4.html"
+			}, {
+				"name": "带有停止按钮的无穷循环中的计时事件",
+				"url": "js_demo/t10_advanced/test5.html"
+			}, {
+				"name": "使用计时事件制作的钟表",
+				"url": "js_demo/t10_advanced/test6.html"
+			}, {
+				"name": "创建对象的实例",
+				"url": "js_demo/t10_advanced/test7.html"
+			}, {
+				"name": "创建用于对象的模板",
+				"url": "js_demo/t10_advanced/test8.html"
+			}, {
+				"name": "检测浏览器的全部信息",
+				"url": "js_demo/t10_advanced/test9.html"
+			}]
 		}]
 	}]
 }, {
