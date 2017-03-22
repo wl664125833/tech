@@ -3,13 +3,6 @@
 <head>
 	<meta charset="utf-8" />
 	<title>目录</title>
-	<script type="text/javascript" src="js/jquery-1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/ztree.3.5.26/jquery.ztree.core.js"></script>
-	<script type="text/javascript" src="css/bootstrap-3.3.7/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="jsonData/listData.js" ></script>
-	<link rel="stylesheet" href="css/ztree.3.5.26/zTreeStyle/zTreeStyle.css" />
-	<link rel="stylesheet" href="css/css/bootstrap-3.3.7/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/page/index.css" />
 </head>
 <BODY>
 	<div id="top"></div>
@@ -22,10 +15,24 @@
 			</div>
 		</div>
 		<div id="midRigth">
+			<div id="meng" class="stu_score">
+				
+			</div>
+			<div id="han" class="stu_score">
+			
+			</div>
 		</div>
 	</div>
 	<div id="bottom"></div>
 </BODY>
+<script type="text/javascript" src="js/jquery-1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/ztree.3.5.26/jquery.ztree.core.js"></script>
+<script type="text/javascript" src="css/bootstrap-3.3.7/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="js/echarts/echarts.min.js" ></script>
+<script type="text/javascript" src="jsonData/listData.js" ></script>
+<link rel="stylesheet" href="css/ztree.3.5.26/zTreeStyle/zTreeStyle.css" />
+<link rel="stylesheet" href="css/css/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/page/index.css" />
 <SCRIPT type="text/javascript">
 	var setting = {
 		view: {
@@ -37,4 +44,31 @@
 		$.fn.zTree.init($("#treeDemo"), setting, zNodes);
 	});
 </SCRIPT>
+<script>
+	var mengChart = echarts.init(document.getElementById('meng'));
+	var hanChart = echarts.init(document.getElementById('han'));
+	var option = {
+		tooltip: {
+			show: true
+		},
+		legend: {
+			data: ['销量']
+		},
+		xAxis: [{
+			type: 'category',
+			data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+		}],
+		yAxis: [{
+			type: 'value'
+		}],
+		series: [{
+			"name": "销量",
+			"type": "bar",
+			"data": [5, 20, 40, 10, 10, 20]
+		}]
+	};
+	
+	// 为echarts对象加载数据 
+	mengChart.setOption(option);
+</script>
 </HTML>

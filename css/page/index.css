@@ -5,14 +5,17 @@
 }
 body{
 }
+.stu_score{
+	height: 300px;
+}
 /*#top{
 	background-color: #00B83F;
 	height: 100px;
-}
-#bottom{
+}*/
+/*#bottom{
 	background-color: #2B542C;
 	height: 50px;
-}
+}*/
 #middle{
 	height: 500px;
 }
@@ -25,9 +28,9 @@ body{
 	float: left;
 	background-color: #00B83F;
 }
-.content_wrap{
+/*.content_wrap{
 	width: auto;
-}
-a>span{
+}*/
+/*a>span{
 	font-size: 15px !important;
 }*/
