@@ -7,6 +7,7 @@ body{
 }
 .stu_score{
 	height: 300px;
+	width: 1100px;
 }
 /*#top{
 	background-color: #00B83F;
@@ -21,11 +22,11 @@ body{
 }
 #midLeft{
 	overflow: auto;
-	width: 200px;
+	/*width: 200px;*/
 	float: left;
 }
 #midRigth{
-	float: left;
+	float: right;
 	background-color: #00B83F;
 }
 /*.content_wrap{
