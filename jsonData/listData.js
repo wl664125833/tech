@@ -187,6 +187,63 @@ listData = [{
 			"url": "html/ch5/test18.html"
 		}]
 	}, {
+		"name": "ch6-css-文字排版",
+		"children": [{
+			"name": "test1",
+			"url": "html/ch6/test1.html"
+		}, {
+			"name": "test2",
+			"url": "html/ch6/test2.html"
+		}, {
+			"name": "test3",
+			"url": "html/ch6/test3.html"
+		}, {
+			"name": "test4",
+			"url": "html/ch6/test4.html"
+		}, {
+			"name": "test5",
+			"url": "html/ch6/test5.html"
+		}, {
+			"name": "test6",
+			"url": "html/ch6/test6.html"
+		}, {
+			"name": "test7",
+			"url": "html/ch6/test7.html"
+		}, {
+			"name": "test8",
+			"url": "html/ch6/test8.html"
+		}, {
+			"name": "test9",
+			"url": "html/ch6/test9.html"
+		}, {
+			"name": "test10",
+			"url": "html/ch6/test10.html"
+		}, {
+			"name": "test11",
+			"url": "html/ch6/test11.html"
+		}, {
+			"name": "test12",
+			"url": "html/ch6/test12.html"
+		}, {
+			"name": "test13",
+			"url": "html/ch6/test13.html"
+		}, {
+			"name": "test14",
+			"url": "html/ch6/test14.html"
+		}, {
+			"name": "test15",
+			"url": "html/ch6/test15.html"
+		}, {
+			"name": "test16",
+			"url": "html/ch6/test16.html"
+		}, {
+			"name": "test17",
+			"url": "html/ch6/test17.html"
+		}, {
+			"name": "test18",
+			"url": "html/ch6/test18.html"
+		}]
+	},{
 		"name": "没有子节点",
 		"isParent": true
 	}]
