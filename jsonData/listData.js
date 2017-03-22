@@ -457,6 +457,24 @@ listData = [{
 				"name": "检测浏览器的全部信息",
 				"url": "js_demo/t10_advanced/test9.html"
 			}]
+		}, {
+			"name": "字符串String对象",
+			"children": [{
+				"name": "返回字符串的长度",
+				"url": "js_demo/t11_string/test1.html"
+			}, {
+				"name": "为字符串添加样式",
+				"url": "js_demo/t11_string/test2.html"
+			}, {
+				"name": "返回字符串中指定文本首次出现的位置",
+				"url": "js_demo/t11_string/test3.html"
+			}, {
+				"name": "查找字符串中特定的字符",
+				"url": "js_demo/t11_string/test4.html"
+			}, {
+				"name": "替换字符串中的字符",
+				"url": "js_demo/t11_string/test5.html"
+			}]
 		}]
 	}]
 }, {
