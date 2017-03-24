@@ -335,6 +335,9 @@ listData = [{
 		"name": "ch6-css排版，盒子模型",
 		"url": "html/tech/ch6.html"
 	}, {
+		"name": "ch7-css布局小技巧",
+		"url": "html/tech/ch7.html"
+	}, {
 		"name": "web前端知识结构",
 		"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 		"url": "html/tech/front.html"
