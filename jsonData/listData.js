@@ -313,6 +313,30 @@ listData = [{
 			"url": "html/ch7/test23.html"
 		}]
 	}, {
+		"name": "ch8-css-经典布局",
+		"children": [{
+			"name": "test1",
+			"url": "html/ch8/test1.html"
+		}, {
+			"name": "test2",
+			"url": "html/ch8/test2.html"
+		}, {
+			"name": "test3",
+			"url": "html/ch8/test3.html"
+		}, {
+			"name": "test4",
+			"url": "html/ch8/test4.html"
+		}, {
+			"name": "test5",
+			"url": "html/ch8/test5.html"
+		}, {
+			"name": "test6",
+			"url": "html/ch8/test6.html"
+		}, {
+			"name": "test7",
+			"url": "html/ch8/test7.html"
+		}]
+	}, {
 		"name": "没有子节点",
 		"isParent": true
 	}]
