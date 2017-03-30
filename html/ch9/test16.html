@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> new document </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+		<script type="text/javascript">
+			function openWindow() {
+				// 新窗口打开时弹出确认框，是否打开
+				var opentag = confirm("是否在新窗口打开网站？");
+				if (opentag == true) {
+					var webadress = prompt("请输入网址", "http://www.imnu.edu.cn/");
+					// 通过输入对话框，确定打开的网址，默认为 http：//www.imooc.com/
+					if (webadress != null) {
+						window.open(webadress, "_blank", 'width=400,height=500,menubar=no,toolbar=no');
+					} else {
+						alert("结束");
+					}
+				}
+				//打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+				else {
+					alert("结束");
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="button" value="新窗口打开网站" onclick="openWindow()" />
+	</body>
+
+</html>
