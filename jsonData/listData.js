@@ -413,6 +413,12 @@ listData = [{
 		"name": "ch7-css布局小技巧",
 		"url": "html/tech/ch7.html"
 	}, {
+		"name": "ch8-css布局",
+		"url": "html/tech/ch8.html"
+	}, {
+		"name": "ch9-javascript-基本",
+		"url": "html/tech/ch9.html"
+	}, {
 		"name": "web前端知识结构",
 		"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 		"url": "html/tech/front.html"
