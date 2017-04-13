@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+		<title>display</title>
+		<script type="text/javascript">
+			function hidetext() {
+				var mychar = document.getElementById("con");
+				mychar.style.display = "none";
+			}
+
+			function showtext() {
+				var mychar = document.getElementById("con");
+				mychar.style.display = "block";
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>JavaScript</h1>
+		<p id="con">做为一个Web开发师来说，如果你想提供漂亮的网页、令用户满意的上网体验，JavaScript是必不可少的工具。</p>
+		<form>
+			<input type="button" onclick="hidetext()" value="隐藏内容" />
+			<input type="button" onclick="showtext()" value="显示内容" />
+		</form>
+	</body>
+
+</html>
