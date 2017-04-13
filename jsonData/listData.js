@@ -967,9 +967,21 @@ listData = [{
 	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Game.png",
 	"children": [{
 		"name": "打砖块",
-		"url": "html/game/game1/index.html"
+		"url": "html/game/brick/index.html"
 	}, {
 		"name": "迷宫",
-		"url": "html/game/game2/index.html"
+		"url": "html/game/maze/index.html"
+	}, {
+		"name": "数独",
+		"url": "html/game/soduku/soduku.html"
+	}, {
+		"name": "2048",
+		"url": "html/game/2048/2048.html"
+	}, {
+		"name": "扫雷",
+		"url": "html/game/mine/mine.html"
+	}, {
+		"name": "贪吃蛇",
+		"url": "html/game/snake/snake.html"
 	}]
-}, ]
+}]
