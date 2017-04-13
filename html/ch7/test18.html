@@ -6,28 +6,19 @@
 		<title>不定宽块状元素水平居中</title>
 		<style>
 			.container {
-				float: left;
-				position: relative;
-				left: 50%
+				text-align: center;
 			}
 			
 			.container ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
-				position: relative;
-				left: -50%;
+				display: inline;
 			}
 			
 			.container li {
-				float: left;
-				display: inline;
 				margin-right: 8px;
-			}
-			/*下面是代码任务区*/
-			
-			.wrap-center {
-				background: #ccc;
+				display: inline;
 			}
 		</style>
 	</head>
@@ -39,11 +30,6 @@
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
 			</ul>
-		</div>
-
-		<!--下面是代码任务区-->
-		<div class="wrap">
-			<div class="wrap-center">我们来学习一下这种方法。</div>
 		</div>
 	</body>
 

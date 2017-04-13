@@ -337,6 +337,57 @@ listData = [{
 			"url": "html/ch8/test7.html"
 		}]
 	}, {
+		"name": "ch9-javascript很强大",
+		"children": [{
+			"name": "test1",
+			"url": "html/ch9/test1.html"
+		}, {
+			"name": "test2",
+			"url": "html/ch9/test2.html"
+		}, {
+			"name": "test3",
+			"url": "html/ch9/test3.html"
+		}, {
+			"name": "test4",
+			"url": "html/ch9/test4.html"
+		}, {
+			"name": "test5",
+			"url": "html/ch9/test5.html"
+		}, {
+			"name": "test6",
+			"url": "html/ch9/test6.html"
+		}, {
+			"name": "test7",
+			"url": "html/ch9/test7.html"
+		}, {
+			"name": "test8",
+			"url": "html/ch9/test8.html"
+		}, {
+			"name": "test9",
+			"url": "html/ch9/test9.html"
+		}, {
+			"name": "test10",
+			"url": "html/ch9/test10.html"
+		}, {
+			"name": "test11",
+			"url": "html/ch9/test11.html"
+		}, {
+			"name": "test12",
+			"url": "html/ch9/test12.html"
+		}, {
+			"name": "test13",
+			"url": "html/ch9/test13.html"
+		}, {
+			"name": "test14",
+			"url": "html/ch9/test14.html"
+		}, {
+			"name": "test15",
+			"url": "html/ch9/test15.html"
+		}, {
+			"name": "test16",
+			"url": "html/ch9/test16.html"
+		}]
+	}, {
 		"name": "没有子节点",
 		"isParent": true
 	}]
