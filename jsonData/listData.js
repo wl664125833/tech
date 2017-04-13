@@ -634,29 +634,6 @@ listData = [{
 		}]
 	}]
 }, {
-	"name": "点名",
-	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/8.png",
-	"children": [{
-		"name": "汉班点名",
-		"url": "dianming.html"
-	}, {
-		"name": "蒙班点名",
-		"url": "dianming2.html"
-	}]
-}, {
-	"name": "相关学习网站",
-	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Chrome_11_16px.png",
-	"children": [{
-		"name": "菜鸟教程",
-		"url": "http://www.runoob.com/"
-	}, {
-		"name": "w3school",
-		"url": "http://www.w3school.com.cn/"
-	}, {
-		"name": "课程源码",
-		"url": "https://github.com/wl664125833/tech"
-	}]
-}, {
 	"name": "学生项目",
 	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/student_girl_light_16px.png",
 	"children": [{
@@ -962,4 +939,37 @@ listData = [{
 			"url": "20141106020董苗苗"
 		}]
 	}]
-}]
+}, {
+	"name": "点名",
+	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/8.png",
+	"children": [{
+		"name": "汉班点名",
+		"url": "dianming.html"
+	}, {
+		"name": "蒙班点名",
+		"url": "dianming2.html"
+	}]
+}, {
+	"name": "相关学习网站",
+	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Chrome_11_16px.png",
+	"children": [{
+		"name": "菜鸟教程",
+		"url": "http://www.runoob.com/"
+	}, {
+		"name": "w3school",
+		"url": "http://www.w3school.com.cn/"
+	}, {
+		"name": "课程源码",
+		"url": "https://github.com/wl664125833/tech"
+	}]
+}, {
+	"name": "游戏",
+	"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Game.png",
+	"children": [{
+		"name": "打砖块",
+		"url": "html/game/game1/index.html"
+	}, {
+		"name": "迷宫",
+		"url": "html/game/game2/index.html"
+	}]
+}, ]
