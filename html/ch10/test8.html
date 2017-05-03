@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>系好安全带,准备启航</title>
+		<!--引入外部文件的方式-->
+
+		<script type="text/javascript">
+			//多行注释
+			/*我是多行注释！
+			  我需要隐藏，
+			  否则会报错哦！
+			*/
+			//在页面中显示文字
+			document.write("系好安全带,准备启航--目标JS" + "<br>")
+				//页面中弹出提示框
+			function duihua() {
+				var txt = confirm("请点击我，准备好了吗？");
+				if (txt == true) {
+					document.write("准备好了，起航吧！！");
+				} else {
+					document.write("请重新学习课程内容吆!");
+				}
+			}
+			//单行注释
+			//我是单行注释，我也要隐藏起来！
+		</script>
+	</head>
+
+	<body>
+		<input type="button" value="请点击我，准备好了吗" onclick="duihua()">
+		</input>
+	</body>
+
+</html>
