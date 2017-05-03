@@ -542,6 +542,12 @@ listData = [{
 		"name": "ch9-javascript-基本",
 		"url": "html/tech/ch9.html"
 	}, {
+		"name": "ch10-javascript-基础",
+		"url": "html/tech/ch10.html"
+	}, {
+		"name": "ch11-javascript-数组与流程控制",
+		"url": "html/tech/ch11.html"
+	}, {
 		"name": "web前端知识结构",
 		"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 		"url": "html/tech/front.html"
