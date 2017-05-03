@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>break</title>
+		<script type="text/JavaScript">
+			var mynum =new Array(70,80,66,90,50,100,89);
+			//定义数组mynum并赋值 
+			var i=0; 
+			while(i<mynum.length) {
+				if(mynum[i]<60) { 
+					document.write( "成绩"+mynum[i]+ "不及格，不用循环了"+ "<br>"); 
+					break; 
+				} 
+				document.write( "成绩:"+mynum[i]+ "及格，继续循环"+ "<br>"); 
+				i=i+1; 
+			} 
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+	</html>
