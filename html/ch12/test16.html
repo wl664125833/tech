@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> 事件</title>
+		<script type="text/javascript">
+			function count() {
+				var a = document.getElementById("txt1").value;
+				var b = document.getElementById("txt2").value;
+				var c = document.getElementById("select").value;
+				var result = "";
+				if (c == "+") {
+					result = parseFloat(a) + parseFloat(b);
+				}
+				if (c == "-") {
+					result = parseFloat(a) - parseFloat(b);
+				}
+				if (c == "*") {
+					result = parseFloat(a) * parseFloat(b);
+				}
+				if (c == "/") {
+					if (b != 0) {
+						result = parseFloat(a) / parseFloat(b);
+					} else {
+						alert("0不能做除数，请重新输入！")
+					}
+				}
+				document.getElementById("fruit").value = result;
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type='text' id='txt1' />
+		<select id='select'>
+		<option value='+'>+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+   </select>
+		<input type='text' id='txt2' />
+		<input type='button' value=' = ' onclick="count()" />
+		<!--通过 = 按钮来调用创建的函数，得到结果-->
+		<input type='text' id='fruit' />
+	</body>
+
+</html>
