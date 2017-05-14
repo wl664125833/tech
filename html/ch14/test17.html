@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>浏览器对象</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+ </head>
+ <body>
+  <p>
+    <b id = "seconds">5</b>秒后回到主页&nbsp;<a href="javascript:backnow();" >返回</a>
+  </p>
+
+
+  <script type="text/javascript">
+
+   var n =  document.getElementById("seconds");
+   var i = 5;
+   var tt = setInterval( function (){
+       i = i - 1;
+      n.innerHTML = i;
+      if(i == 1){
+        window.location.assign("http://www.imnu.edu.cn");
+      }
+    },1000);
+
+   function backnow(){
+       window.history.go(-1);
+   }
+
+ </script>
+</body>
+</html>
