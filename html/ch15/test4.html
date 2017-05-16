@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+		<title>无标题文档</title>
+	</head>
+
+	<body>
+		<form>
+			请选择你爱好:<br>
+			<input type="checkbox" name="hobby" id="hobby1"> 音乐
+			<input type="checkbox" name="hobby" id="hobby2"> 登山
+			<input type="checkbox" name="hobby" id="hobby3"> 游泳
+			<input type="checkbox" name="hobby" id="hobby4"> 阅读
+			<input type="checkbox" name="hobby" id="hobby5"> 打球
+			<input type="checkbox" name="hobby" id="hobby6"> 跑步 <br>
+			<input type="button" value="全选" onclick="checkall();">
+			<input type="button" value="全不选" onclick="clearall();">
+			<p>请输入您要选择爱好的序号，序号为1-6:</p>
+			<input id="wb" name="wb" type="text">
+			<input name="ok" type="button" value="确定" onclick="checkone();">
+		</form>
+		<script type="text/javascript">
+			function checkall() {
+				var hobby = document.getElementsByTagName("input");
+				for (var i = 0; i < hobby.length; i++) {
+					hobby[i].checked = true;
+				}
+				// 任务1 
+			}
+
+			function clearall() {
+				var hobby = document.getElementsByName("hobby");
+				//alert(hobby.length);
+				for (var i = 0; i < hobby.length; i++) {
+					hobby[i].checked = false;
+				}
+				// 任务2    
+			}
+
+			function checkone() {
+				clearall();
+				var hobby = document.getElementsByName("hobby");
+				var j = document.getElementById("wb").value;
+				for (var i = 0; i < j.length; i++) {
+					if (j.charAt(i) > 6 || j.charAt(i) < 1) {
+						alert("越界,请重新输入！");
+						document.getElementById("wb").value = "";
+					}
+				}
+				for (var n = 0; n < j.length; n++) {
+					hobby[(j.charAt(n)) - 1].checked = true;
+				}
+			}
+		</script>
+	</body>
+
+</html>

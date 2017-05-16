@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+			function getnum() {
+				var mynode = document.getElementsByName("myt");
+				alert(mynode.length);
+			}
+		</script>
+	</head>
+
+	<body>
+		<input name="myt" type="text" value="1">
+		<input name="myt" type="text" value="2">
+		<input name="myt" type="text" value="3">
+		<input name="myt" type="text" value="4">
+		<input name="myt" type="text" value="5">
+		<input name="myt" type="text" value="6">
+
+		<br />
+		<input type="button" onclick="getnum()" value="看看有几项？" />
+	</body>
+
+</html>

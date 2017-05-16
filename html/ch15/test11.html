@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>nextSibling</title>
+	</head>
+
+	<body>
+		<ul id="u1">
+			<li id="a">javascript</li>
+			<li id="b">jquery</li>
+			<li id="c">html</li>
+		</ul>
+		<ul id="u2">
+			<li id="d">css3</li>
+			<li id="e">php</li>
+			<li id="f">java</li>
+		</ul>
+		<script type="text/javascript">
+			function get_nextSibling(n) {
+				var x = n.nextSibling;
+				while (x && x.nodeType != 1) {
+					x = x.nextSibling;
+				}
+				return x;
+			}
+			var x = document.getElementsByTagName("li")[0];
+			document.write(x.nodeName);
+			document.write(" = ");
+			document.write(x.innerHTML);
+			var y = get_nextSibling(x);
+			if (y != null) {
+				document.write("<br />nextsibling: ");
+				document.write(y.nodeName);
+				document.write(" = ");
+				document.write(y.innerHTML + "<br  /><br  />");
+			} else {
+				document.write("<br>已经是最后一个节点" + "<br /><br  />");
+			}
+			//以下是本题题解
+			function get_previousSibling(n) {
+				var z = n.previousSibling;
+				while (z && z.nodeType != 1) {
+					z = z.previousSibling;
+				}
+				return z;
+			}
+			var z = document.getElementsByTagName("li")[4];
+			document.write(z.nodeName + " = " + z.innerHTML);
+			var d = get_previousSibling(z);
+			if (d != null) {
+				document.write("<br  />previoussibling:" + d.nodeName + " = " + d.innerHTML);
+			} else {
+				document.write("<br />这是第一个节点，前面没有节点了。");
+			}
+		</script>
+	</body>
+
+</html>

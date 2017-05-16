@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>无标题文档</title>
+	</head>
+
+	<body>
+
+		<ul id="test">
+			<li>JavaScript</li>
+			<li>HTML</li>
+		</ul>
+
+		<script type="text/javascript">
+			var otest = document.getElementById("test");
+			var newnode = document.createElement("li");
+			newnode.innerHTML = "php";
+			otest.insertBefore(newnode, otest.lastChild);
+		</script>
+
+	</body>
+
+</html>
