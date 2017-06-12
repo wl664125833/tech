@@ -803,6 +803,9 @@ listData = [{
 		"name": "ch15-javascript-DOM(文档对象模型)",
 		"url": "html/tech/ch15.html"
 	}, {
+		"name": "计算绩点",
+		"url": "html/tech/testG.html"
+	}, {
 		"name": "web前端知识结构",
 		"icon": "css/ztree.3.5.26/zTreeStyle/img/diy/Organization_structure_16px.png",
 		"url": "html/tech/front.html"

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> 计算绩点 </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+		<link rel="stylesheet" href="../../css/bootstrap-3.3.7/css/bootstrap.min.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var tr = document.getElementsByTagName("tr");
+				for (var i = 0; i < tr.length; i++) {
+					bgcChange(tr[i]);
+				}
+				// 鼠标移动改变背景,可以通过给每行绑定鼠标移上事件和鼠标移除事件来改变所在行背景色。
+			}
+
+			function bgcChange(obj) {
+				obj.onmouseover = function() {
+					obj.style.backgroundColor = "#f2f2f2";
+				}
+				obj.onmouseout = function() {
+					obj.style.backgroundColor = "#fff";
+				}
+			}
+			// 编写一个函数，供添加按钮调用，动态在表格的最后一行添加子节点；
+			var num = 2;
+
+			function add() {
+				var tr = document.createElement("tr");	//行
+				var xh = document.createElement("td");	//第一个单元格：课程名称
+				var xm = document.createElement("td");	//第二个单元格：学分
+				var xs = document.createElement("td");	//第三个单元格：成绩
+				var del = document.createElement("td");	//第四个单元格：删除
+				xh.innerHTML = "<input type='text' name='text1' />";
+				xm.innerHTML = "<input type='text' name='text2' />";
+				xs.innerHTML = "<input type='text' name='text3' />";
+				del.innerHTML = "<a href='javascript:;' onclick='del(this)' >删除</a>";
+				var tab = document.getElementById("table");
+				tab.appendChild(tr);
+				tr.appendChild(xh);
+				tr.appendChild(xm);
+				tr.appendChild(xs);
+				tr.appendChild(del);
+				var tr = document.getElementsByTagName("tr");
+				for (var i = 0; i < tr.length; i++) {
+					bgcChange(tr[i]);
+				}
+			}
+			// 创建删除函数
+			function del(obj) {
+				var tr = obj.parentNode.parentNode;
+				tr.parentNode.removeChild(tr);
+			}
+			//计算绩点
+			function getG(){
+				//求分母
+				var texts2 = document.getElementsByName("text2");
+				var sum1 = 0;		//总学分
+				for(var i=0;i<texts2.length;i++){
+					var temp = texts2[i].value*1.0;
+					sum1+=temp;
+				}
+				//求分子
+				var texts3 = document.getElementsByName("text3");
+				var sum2 = 0;
+				for(var i=0;i<texts3.length;i++){
+					
+					var temp = texts3[i].value*1.0; //成绩
+					var temp2 = texts2[i].value*1.0; //学分
+					if(temp>=95){
+						sum2=temp2*4.5+sum2;
+					}else if(temp>=90){
+						sum2=temp2*4+sum2;
+					}else if(temp>=85){
+						sum2=temp2*3.5+sum2;
+					}else if(temp>=80){
+						sum2=temp2*3+sum2;
+					}else if(temp>=75){
+						sum2=temp2*2.5+sum2;
+					}else if(temp>=70){
+						sum2=temp2*2+sum2;
+					}else if(temp>=65){
+						sum2=temp2*1.5+sum2;
+					}else if(temp>=60){
+						sum2=temp2*1+sum2;
+					}else{
+						sum2+=0;
+					}
+				}
+				alert("你的绩点="+(sum2/sum1)+"；总绩点学分="+sum2+"；总学分="+sum1);
+			}
+		</script>
+	</head>
+	<body>
+		<table class="table" border="1" width="50%" id="table">
+			<tr><td colspan="4" style="text-align: center;font-size: 20px; background-color: bisque;">计算绩点</td></tr>
+			<tr>
+				<th>课程名称</th>
+				<th>课程学分</th>
+				<th>成绩</th>
+				<th>操作</th>
+			</tr>
+		</table>
+		<input type="button" value="添加课程" onclick="add()" />
+		<input type="button" value="计算绩点" onclick="getG()" />
+		<!--在添加按钮上添加点击事件  -->
+		
+	</body>
+</html>
