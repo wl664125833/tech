@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+		<style>
+			.aaron1 {
+				border: 1px solid red;
+			}
+			
+			.aaron1 p {
+				color: red;
+				font-family: '微软雅黑';
+			}
+			
+			.aaron2 {
+				border: 1px solid blue;
+			}
+			
+			.aaron2 p {
+				color: blue;
+				font-family: '微软雅黑';
+			}
+			
+			.aaron3 {
+				border: 1px solid green;
+			}
+			
+			.aaron4 {
+				border: 1px solid yellow;
+			}
+			
+			.aaron3 p {
+				color: green;
+				font-family: '微软雅黑';
+			}
+			
+			.aaron4 p {
+				color: yellow;
+				font-family: '微软雅黑';
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>通过prepend与prependTo添加元素</h2>
+		<button id="bt1">点击通过jQuery的prepend添加元素</button>
+		<button id="bt2">点击通过jQuery的prependTo添加元素</button>
+		<button id='bt3'>MY SHOW</button>
+		<button id='bt4'>MY personnel space</button>
+		<div class="aaron1">
+			<p>测试prepend</p>
+		</div>
+		<div class="aaron2">
+			<p>测试prependTo</p>
+		</div>
+		<div class="aaron3">
+			<p>测试prependTo</p>
+		</div>
+		<div class="aaron4">
+			<p>测试prependTo</p>
+		</div>
+		<script type="text/javascript">
+			$("#bt1").on('click', function() {
+				//找到class="aaron1"的div节点
+				//然后通过prepend在内部的首位置添加一个新的p节点
+				$('.aaron1')
+					.prepend('<p>prepend增加的p元素</p>')
+			})
+		</script>
+		<script type="text/javascript">
+			$("#bt2").on('click', function() {
+				//找到class="aaron2"的div节点
+				//然后通过prependTo内部的首位置添加一个新的p节点
+				$('<p>prependTo增加的p元素</p>')
+					.prependTo($('.aaron2'))
+			})
+		</script>
+		<script type='text/javascript'>
+			$('#bt3').on('click', function() {
+				$('.aaron3').prepend('<p>prepend增加的P元素</p>');
+			})
+		</script>
+		<script type='text/javascript'>
+			$('#bt4').on('click', function() {
+				$('<p>prependTo增加的P元素</p>').prependTo($('.aaron4'));
+			})
+		</script>
+	</body>
+
+</html>
