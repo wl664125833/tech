@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        div {
+            width: 100px;
+            height: 90px;
+            float: left;
+            padding: 5px;
+            margin: 5px;
+            background-color: #EEEEEE;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>   
+	 <div class="aaron">
+    	<p>class="aaron"</p>
+    	<p>选中</p>
+    </div>   
+     <div class="aaron">
+        <p>class="aaron"</p>
+        <p>选中</p>
+    </div>
+
+    <div class="imooc">
+        <p>class="imooc"</p>
+        <p>jQuery选中</p>
+    </div>
+    <div class="imooc">
+        <p>class="imooc"</p>
+        <p>jQuery选中</p>
+    </div>
+
+    <script type="text/javascript">
+        //通过原生方法处理
+        //样式是可以多选的，所以得到的是一个合集
+        //需要通过循环给合集中每一个元素修改样式
+        var divs = document.getElementsByClassName('aaron');
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].style.border = "3px solid blue";
+        }
+    </script>
+
+    <script type="text/javascript">
+        //通过jQuery直接传入class
+        //class选择器可以选择多个元素
+        $(".imooc").css("border", "3px solid red");
+    </script>
+
+
+</body>
+
+</html>

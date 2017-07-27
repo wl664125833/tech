@@ -803,6 +803,18 @@ listData = [{
 		"name": "ch15-javascript-DOM(文档对象模型)",
 		"url": "html/tech/ch15.html"
 	}, {
+		"name": "jquery教程",
+		"children": [{
+			"name": "jquery样式",
+			"url": "html/tech/jquery_style.html"
+		}, {
+			"name": "jqueryDOM",
+			"url": "html/tech/jquery_DOM.html"
+		}, {
+			"name": "jquery事件",
+			"url": "html/tech/jquery_event.html"
+		}]
+	}, {
 		"name": "计算绩点",
 		"url": "html/tech/testG.html"
 	}, {
