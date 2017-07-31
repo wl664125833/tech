@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+<link rel="stylesheet" href="../css/1.css" />
+<link rel="stylesheet" href="../css/2.css" />
+	<style>
+	#f{
+		float: right;
+		padding-top: 70px;
+		padding-left: 5px;
+	}
+
+	.div10{
+		background: url(../img/321.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	ul li a{
+		text-decoration:none;
+		color: #FFFFFF;
+	}
+	</style>
+
+	<style type="text/css">
+	
+	
+	</style>
+	<body background="../img/timg.jpg">
+	<blockquote>&nbsp;</blockquote>
+     <div class="div1">
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	<img src="../img/Premier League 2016-2017 bw.png"  width="99px" height="160px" alt="1"/>
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	&nbsp;&nbsp;&nbsp;
+     	<img src="../img/tupian1.png" width="600px" height="80px"/>
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	<img src="../img/erweims.PNG" />
+     	<div id="f">
+     	<form>
+     	用户:<input name="username" type="text" > 
+		<input type="reset" value="登录" onclick="open1()" />
+		<br/>
+		密码:<input name="password" type="text" >
+		<input type="button" value="找回密码" onclick="open2()" />
+     	</form>
+     	</div>
+     </div>	
+     <blockquote>&nbsp;</blockquote>
+      <div class="div2">
+     	<ul id="zh">
+     		&nbsp;&nbsp;&nbsp;
+     		<li id="z"><a href="../index.html">主页</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<li id="z"><a href="2.html">简介</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<li id="z"><a href="3.html">足球图库</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<li id="z"><a href="4.html">足球视频</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<li id="z"><a href="1.html" class="active">球迷交流</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     	</ul>
+     </div>
+     <div class="div10" style="margin: 100px;">
+     	<h1 align="center">请填写，谢谢合作!</h1>
+    <blockquote style="margin: 100px;">
+    <form action="save.php" method="post" >
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" checked="checked"/>
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+    <br />
+    <br />
+    <label>喜欢的球队:</label>
+    <select multiple="multiple">
+		      <option value="切尔西">切尔西</option>
+		      <option value="佰恩利">佰恩利</option>
+		      <option value="利物浦">利物浦</option>
+		      <option value="南安普顿">南安普顿</option>
+		      <option value="埃弗顿">埃弗顿</option>
+		      <option value="女王公园巡游者">女王公园巡游者</option>
+		      <option value="托特纳姆热刺">托特纳姆热刺</option>
+		      <option value="斯托克城">斯托克城</option>
+		      <option value="斯旺西">斯旺西</option>
+		      <option value="曼彻斯特城">曼彻斯特城</option>
+		      <option value="桑德兰">桑德兰</option>
+		      <option value="水晶宫">水晶宫</option>
+		      <option value="曼彻斯特联">曼彻斯特联</option>
+		      <option value="纽卡斯尔联">纽卡斯尔联</option>
+		      <option value="莱切斯特城">莱切斯特城</option>
+		      <option value="西布罗姆维奇">西布罗姆维奇</option>
+		      <option value="赫尔城">赫尔城</option>
+		      <option value="西汉姆联">西汉姆联</option>
+		      <option value="阿斯顿维拉">阿斯顿维拉</option>
+		      <option value="阿森纳">阿森纳</option> 
+    </select>
+    <br />
+    <br />
+    <label>经常用什么看比赛</label>
+    <label>电脑</label><input type="checkbox" value="a" name="like" checked="checked"/>
+    <label>手机</label><input type="checkbox" value="b" name="like" />
+    <label>电视直播</label><input type="checkbox" value="c" name="like" />
+    <label>iPad</label><input type="checkbox" value="d" name="like"/>
+    <br />
+    <br />
+    <label for="email">输入你的邮箱,方便我们联系您！</label>
+	<input type="email" id="email" placeholder="Enter email">
+	<input type="reset" value="确定">
+    <br />
+    <br />
+	<label>给我们的建议：</label>
+			<textarea cols="50" rows="10">在这里您的输入内容...</textarea>
+			<input type="submit" value="确定"  />
+			<input type="reset" value="重置"  />
+			<br />
+			<br />
+</form>
+</blockquote>
+     </div>
+	</body>
+	     <script type="text/javascript">
+	function open1(){
+	    alert("请填写用户名跟密码后登录");
+	  }
+	function open2(){
+		alert("找不回密码");
+	}
+	</script>
+</html>

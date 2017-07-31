@@ -1,0 +1,487 @@
+/*��ʽԤ��*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width:100% ;
+    height: 100%;
+
+}
+body{
+    background: url("../img/bg3.jpg");
+    background-size: 100%;
+}
+li{
+    list-style: none;
+    margin-top:15px ;
+}
+i{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content:'200B';
+    height:0;
+    font-size:0;
+    display:block;
+    clear:both;
+}/*���*/
+/*ͷ����Ϣ*/
+.header{
+    width:100vw;
+    height: 60px;
+    background: #22252a;
+    color: #ffffff;
+}
+/*ͼ��*/
+.T{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin:10px 0 0 40px ;
+    background: url("../img/T.png");
+    background-size: 100% ;
+}
+.T2{
+	width: 40px;
+    height: 40px;
+    float: right;
+    margin:10px 0 0 40px ;
+    background: url("../img/T.png");
+    background-size: 100% ;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin:10px 0 0 40px ;
+    background: url("../img/logo.jpg");
+    background-size: 100% ;
+}
+.logo a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+}
+.login{
+    color: red;
+    float: right;
+    margin-right:40px ;
+    height: 60px;
+    line-height: 60px;
+}
+.login a{
+    padding: 0 5px;
+    color: #ffffff;
+}
+.fontSize{
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    width: 100%;
+
+}
+.login_left{
+    float: left;
+
+}
+/********************ע��ҳ***************************************/
+.box li:nth-child(2n+1){
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #222;
+}
+/*li��ǩ������ʽ*/
+.box li:nth-child(2n){
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color:orangered ;
+}
+/*li��ǩż����ʽ*/
+h2{
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    font-family: "KaiTi";
+    text-align: center;
+    color: #fff;
+ }
+.box{
+    width: 40vw;
+
+    float: right;
+}
+.border{
+    width: 260px;
+    height: 40px;
+    border-radius:5px ;
+}
+.bg{
+    width: 140px;
+    height:40px;
+    border-radius: 5px;
+    background:#7acb57 ;
+    color: #fff;
+}
+.color input{
+    color: #000;
+}
+
+
+/******************************��ҳ***************************************/
+
+/*������*/
+.search{
+    width:700px;
+    height: 60px;
+    margin: 0 auto;
+}
+.search .btn_l{
+    width: 620px;
+    height: 60px;
+    float: left;
+    border: 1px solid red;
+    border-radius: 5px 0 0 5px;
+}
+.search .btn_r{
+    cursor: pointer;
+    width: 76px;
+    height: 62px;
+    float: left;
+    border-radius: 0 5px 5px 0;
+    background: url("../img/search.png") red center no-repeat;
+    background-size: 50%;
+    border:  1px solid red
+}
+.mid{
+    text-align: center;
+}
+/*����*/
+.nav{
+    height: 60px;
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.nav li a{
+    padding: 0 20px;
+    color: #666;
+    display: block;
+
+}
+.nav li .red{
+    color: red;
+}
+.nav li a:hover{
+    color: red;
+}
+/*��Ŀ����*/
+.item{
+    width: 70%;
+    margin: 60px 330px ;
+    height: 400px;
+}
+.item div {
+    width: 25%;
+    height:100%;
+    float: left;
+}
+.item ul li{
+    width: 100%;
+    height: 20px;
+}
+.item a{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    display: block;
+    float: left;
+    color:#4f7c87;
+    padding-left: 10px;
+
+}
+.item a:hover{
+    color: red;
+}
+.item div:nth-child(2n+1){
+    background: #d7d7d8;
+}
+.item div:nth-child(2n){
+    background: #e2e2e2;
+}
+.item p{
+
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/*�ײ���Ϣ*/
+.footer{
+    height: 80px;
+    color: #fff;
+    background: #22252a;
+    width: 100vw;
+
+}
+
+/*�����*/
+.art{
+    width: 700px;
+    height: 450px;
+    background: #ffffff;
+    margin: 40px auto 0;
+
+}
+.art .icon{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 700px;
+    background: deepskyblue;
+}
+.art .icon span{
+    float: left;
+    margin:8px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/write.png");
+}
+.art input{
+    width: 500px;
+    height: 20px;
+    margin-top:5px ;
+
+}
+.art textarea{
+    width: 500px;
+    height: 270px;
+}
+
+.art b{
+   padding: 5px;  float: left;
+}
+.art .than{
+    text-align: center;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+}
+.art i{
+    color: blue;
+}
+.art .btnAll{
+    text-align: center;
+    height: 40px;
+    margin-top:30px ;
+
+}
+.inFoo{
+    margin-top: 20px;
+}
+.art .btn_lf,.art .btn_rf{
+    width: 70px;
+    height: 38px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+/********************��̳����***************/
+.catalog ul li{
+    width: 600px;
+    min-height: 200px;
+    background: #fff;
+    opacity: 0.7;
+    margin: 40px auto 0;
+
+}
+.catalog ul p{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: deepskyblue;
+    color: white;
+    font-size: 28px;
+}
+.catalog a{
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 16px;
+    float: left;
+}
+.catalog i{
+    padding: 0 5px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    color: #ccc;
+    font-family: "KaiTi";
+}
+/***********************��¼ҳ**********************************/
+.table{
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #dbeef2;
+    border-radius: 10px;
+}
+.table h1{
+    border-radius: 10px 10px 0 0 ;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-size: 28px;
+    color: #ffffff;
+    background: #035bbf;
+}
+.table p{
+    padding: 5px;
+
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.table p input{
+    width: 200px;
+    height: 40px;
+
+}
+.table .btn_ll,.table .btn_rl{
+    border-radius:5px ;
+    width: 70px;
+    height: 40px;
+    color: #ffffff;
+    background: green;
+}
+.table .btn_rl{
+    background: red;
+}
+
+/*********************list**************************************/
+.new{
+    padding-left: 40px;
+    margin-bottom: 30px;
+
+}
+/*������*/
+.new a{
+    color: red;
+}
+.table_list table{
+    margin:  0 40px;
+    opacity: 0.8;
+    width: auto;
+
+}
+.txt_center{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+
+}
+.txt_center p{
+    width: auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+
+
+}
+/*��λ ��֤span�ڵײ�*/
+.txt_center span{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: "KaiTi";
+    top: 9px;
+    right: 40px;
+
+}
+
+.sun{
+	 float: left;
+	 margin:10px 220px;
+	 width: 144px;
+     height: 144px;
+     background: url("../img/sun.jpg");
+	 background-size:100%;
+	 background:no-repect	   
+}
+.lubiao{
+	 float: left;
+	 margin:0px;
+	 width: 150px;
+     height: 150px;
+     background: url("../img/lubiao.jpg");
+	 background-size:100%;
+	 background:no-repect	   
+}
+.lubiao2{
+	 float: left;
+	 margin:0px;
+	 width: 150px;
+     height: 150px;
+     background: url("../img/lubiao2.jpg");
+	 background-size:100%;
+	 background:no-repect	   
+}
+.lubiao3{
+	 float: left;
+	 margin:0px;
+	 width: 150px;
+     height: 150px;
+     background: url("../img/lubiao3.jpg");
+	 background-size:100%;
+	 background:no-repect	   
+}
+.lubiao4{
+	 float: left;
+	 margin:0px;
+	 width: 150px;
+     height: 150px;
+     background: url("../img/lubiao4.jpg");
+	 background-size:100%;
+	 background:no-repect	   
+}
+.white a{
+	color:white;
+	text-decoration:none；
+}
+.white b{
+	color:red;
+}
+.body_2{
+	margin:0 auto;
+	
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css" >
+</head>
+<script src="js/jquery-1.4.4.min.js" ></script>
+<script src="js/slides.min.jquery.js" ></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+</script>
+<body bgcolor="#000000">
+
+
+<!-- Copyright ?2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<!-- /Copyright ?2005. Spidersoft Ltd -->
+<div id="page">
+<div id="top">
+<img src="images/logo.png"  width="240" height="100" align="left" />
+
+
+</div>
+
+<div id="nav"><p><a href="index.html" >首页</a> <a href="pages/share.html" >作品展示</a> <a href="pages/supplies.html" >服装展示</a> <a href="pages/com.html" >外景展示</a> <a href="pages/news.html" >新闻动态</a> <a href="pages/about.html" >关于我们</a><a href="pages/ly.html" >会员注册</a></p></div>
+<div class="banner" style="margin:0 auto; width:924px;"><img src="images/banner.jpg" /></div>
+<div class="about" style="margin:0 auto; width:924px;"><br />
+<h1 style="font-size:22px; color:#fff; line-height:50px;">摄影简介</h1><p style="color:#fff; line-height:24px; font-size:12px;">摄影一词是源于希腊语 φ?? phos（光线）和 γραφι graphis（绘画、绘图）或γραφ? graphê，两字一起的意思是"以光线绘图"。摄影是指使用某种专门设备进行影像记录的过程，一般我们使用机械照相机或者数码照相机进行摄影。有时摄影也会被称为照相，也就是通过物体所反射的光线使感光介质曝光的过程。有人说过的一句精辟的语言：摄影家的能力是把日常生活中稍纵即逝的平凡事物转化为不朽的视觉图像。<br />
+1、照相、拍电影或电视。郑泽《壬子秋日钝庵邀摄影像作诗奉呈》："摄影纪盛游，或左亦或右。" 洪深 《电影戏剧表演术》第一章一："戏剧对于人生，不能像摄影的对于景物那样，一些不走样地反映。"如：摄影棚。
+
+　　
+国家摄影七大洲低碳环保行精品作品
+国家摄影七大洲低碳环保行精品作品(20张)
+ 2、指照片。《孽海花》第十一回：" 菶如 拆开看了，又拆了那纸包，却密密层层的包着，直到末层，方露出那一张一尺大的西法摄影。上头却是两个美丽的西洋妇人。"
+3、引申指如实反映。 黄人 《<清文汇>序》："有一代之政教风尚，则有一代之学术思想，蜕故孳新，瞤息不可复省，而有为之摄影者曰史，而有为之留声者曰文。"[1] 
+4、摄影是一门随着传统摄影技术的形成和发展而产生的摄影应用科学，它以摄影光学、摄影化学和电子技术为基础，在长期实践中形成了独特的拍摄体系。</p></div>
+<div class="main" align="center">
+<div id="container">
+		<table border="0" cellspacing="10" cellpadding="0">
+  <tr>
+    <td><img src="images/a1.jpg" /></td>
+    <td><table border="0" cellspacing="10" cellpadding="0">
+  <tr>
+    <td><img src="images/a3.jpg" /></td>
+    <td><img src="images/a2.jpg" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/a4.jpg" /></td>
+    <td><img src="images/a5.jpg" /></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+  </div>
+</div>
+
+<div id="foot">
+摄影之家
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+﻿<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/head.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hide {
+            display: none
+        }
+        .nav a:hover{
+            color: red;
+        }
+
+        .tab {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+
+        .tab .tabList {
+            width: 800px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .tab .tabList li:hover{
+            background:lawngreen;
+
+        }
+        .tab .tabList li:hover a{
+            color: #fff;
+        }
+
+        .tab .tabList li {
+            cursor: pointer;
+            list-style: none;
+            height: 40px;
+            float: left;
+            width: 200px;
+            line-height: 40px;
+            background: #cccccc;
+        }
+
+        .tab .tabList .ac {
+            background:lawngreen;
+
+        }
+
+        .tab .tabList .ac a {
+            color: #fff;
+        }
+
+        .tab .tabItem {
+            min-height: 300px;
+            border: 1px solid #ccc;
+        }
+
+        .f_box{
+            width: 800px;
+            height: 300px;/**/
+            margin: 50px auto 0 auto;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .f_box .me{
+            width: 180px;
+            height: 140px;
+            float: right;
+            margin:  5px;
+            background: #ccc;
+            border-radius: 5px;
+        }
+        .f_box .hot{
+            width: 600px;
+            height: 290px;
+            float: left;
+            margin: 5px;
+            background: #ccc;
+            border-radius: 5px;
+        }
+        .f_box .news{
+            width: 180px;
+            height: 140px;
+            float: right;
+            margin: 5px;
+            background: #ccc;
+            border-radius: 5px;
+        }
+        /**************************/
+        .footer{
+            position: relative;
+            bottom: 0px;
+        }
+
+        a:hover { color:blue; }
+        .hoverA font:hover{color:blue}
+    </style>
+
+</head>
+<body class="white">
+
+<div class="mid clearfix">
+    <ul class="nav">
+        <li><a href="#" class="red">首页</a></li>
+        <li><a href="jianjie.html">婚纱简介</a></li>
+        <li><a href="login.html">会员信息</a></li>
+        <li><a href="zuopin.html">作品信息</a></li>
+        <li><a href="cheap.html">超值特惠</a></li>
+        <li><a href="welcome.html">加入我们</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="#">更多</a></li>
+    </ul>
+    <form action="findByNameServlet" method="post">
+        <div class="search">
+            <input type="text" name="selectMessage" id="selectMessage"
+                   class="btn_l" />
+            <input type="submit" name="selectClick" value=""
+                   class="btn_r" />
+        </div>
+    </form>
+</div>
+<br>
+<div id="tabA" class="tab clearfix">
+    <ul class="tabList">
+        <li class="ac"><a href="#">灿烂</a></li>
+        <li><a href="#">萤火</a></li>
+        <li><a href="#">水晶</a></li>
+        <li><a href="#">夜光</a></li>
+    </ul>
+    <div class="tabCont">
+        <div class="tabItem">
+            <img src="img/1.png">
+        </div>
+        <div class="tabItem hide">
+            <img src="img/2.png">
+        </div>
+        <div class="tabItem hide">
+            <img src="img/3.png">
+        </div>
+        <div class="tabItem hide">
+          <img src="img/4.png">
+        </div>
+    </div>
+</div>
+<div class="f_box">
+    <div class="me">
+        <marquee onmouseover=this.stop() onmouseout=this.start() scrollDelay=80 direction=up scrollAmount=1 height=110>
+
+            <div>联系方式：12345678</div>
+            <div>邮箱：12345678@qq.com</div>
+            <div>公司地址:内蒙古师范大学</div>
+            <div>联系人：宇宙无敌小霸王</div>
+        </marquee>
+    </div>
+    <div class="hot">
+        <div>
+            <font size="5">最新活动</font>
+
+            <hr>
+            <div style="margin-left:50px;margin-top: 10px"><a href="http://www.imnu.edu.cn/" target="_blank"><font size="4">跳楼价！！！情人节萤火系列只要998</font></a></div>
+            <div style="margin-left:50px;margin-top: 10px"><a href="http://www.imnu.edu.cn/" target="_blank"><font size="4">跳楼价！！！新婚特惠！！！萤火系列只要998</font></a></div>
+            <div style="margin-left:50px;margin-top: 10px"><a href="http://www.imnu.edu.cn/" target="_blank"><font size="4">跳楼价！！！情人节萤火系列只要998</font></a></div>
+            <div style="margin-left:50px;margin-top: 10px"><a href="http://www.imnu.edu.cn/" target="_blank"><font size="4">跳楼价！！！情人节萤火系列只要998</font></a></div>
+
+        </div>
+
+    </div>
+    <div class="news">
+        <div>友情链接：</div>
+        <div style="margin-left:50px;margin-top: 10px"><a href="http://www.imnu.edu.cn/" target="_blank"><font size="4">百度搜索</font></a></div>
+        <div style="margin-left:50px"><a href="http://www.baodu.com/" target="_blank"><font size="4">百度搜索</font></a></div>
+        <div style="margin-left:50px"><a href="http://www.baodu.com/" target="_blank"><font size="4">百度搜索</font></a></div>
+        <div style="margin-left:50px"><a href="http://www.baodu.com/" target="_blank"><font size="4">百度搜索</font></a></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function myTab(id, auto) {
+        var tab = document.getElementById(id);
+        var tabList = tab.getElementsByTagName('ul')[0];
+        var aLi = tabList.getElementsByTagName('li');
+        var aTabItem = tab.getElementsByClassName('tabItem');
+        var n = 0;
+        var timer;
+        function changeTab() {
+            for (var j = 0; j < aLi.length; j++) {
+                aLi[j].className = '';
+                aTabItem[j].style.display = 'none';
+            }
+            aLi[n].className = 'ac';
+            aTabItem[n].style.display = 'block';
+        }
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].index = i;
+            aLi[i].onclick = function() {
+                n = this.index;
+                changeTab();
+            };
+        }
+        if (auto) {
+            function autoRun() {
+                timer = setInterval(function() {
+                    n++;
+                    if (n > aLi.length - 1) {
+                        n = 0;
+                    }
+                    changeTab();
+                }, 1000);
+            }
+            autoRun();
+
+            tab.onmouseover = function() {
+                clearInterval(timer);
+            };
+
+            tab.onmouseout = function() {
+
+                autoRun();
+            }
+        }
+    }
+    myTab("tabA", true);
+</script>
+<br>
+<br>
+<div class="footer"></div>
+</body>
+</html>

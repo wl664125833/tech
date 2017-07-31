@@ -1,0 +1,64 @@
+.div4{
+	border:1px solid;
+    border-radius:40px;
+    background-color: white;
+    color: black;
+    margin: 100px;
+
+}
+.div6{
+	border:1px solid;
+    
+    background-color: white;
+    color: black;
+    margin: 50px;
+}
+#ll td{
+	     border-width:1px;
+         border-collapse:collapse;
+         border-color:black;
+         border-style:solid;
+         margin: 5px;
+}
+#ll{
+	margin:20px;
+	padding:2px;
+	text-align:center;
+}
+#ll table{
+	margin:0px auto;
+}
+.div7{
+	border:1px solid;
+    border-radius:40px;
+    background-color: white;
+   
+    margin: 50px;
+}
+.div8{
+	border:1px solid;
+    
+    background-color: white;
+   
+    margin: 50px;
+}
+.div8 img{
+	margin: 20px;
+}
+.div9{
+	border:1px solid;
+    background-color: white;
+    margin: 20px;
+    
+}
+#hi{
+	margin: 20px;
+}
+#we{
+	float: right;
+}
+.div10{
+	border:1px solid;
+    background-color: white;
+    margin: 20px;
+}

@@ -1,0 +1,19 @@
+.div2{
+	border:1px solid;
+    border-radius:40px;
+    background-color: black;
+    color: #FFFFE0;
+}
+.div2 a:hover{
+	color: red;
+}
+
+#zh{
+	list-style-type:none;
+    margin:5px;
+    padding:5px;
+}
+#z{
+	display: inline;
+
+}
