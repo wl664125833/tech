@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>右键菜单插件</title>
+		<meta charset="utf-8" />
+		<link href="http://www.imooc.com/data/jquery.contextmenu.css" rel="stylesheet" type="text/css" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+		<script src="http://www.imooc.com/data/jquery.contextmenu.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div id="divtest">
+			<div class="title"><span class="fl">点击右键</span></div>
+			<div class="content">
+				<input id="btnSubmit" type="button" value="提交" />
+				<div class="tip"></div>
+			</div>
+			<div class="contextMenu" id="sysMenu">
+				<ul>
+					<li id="Li3"><img src="http://img.mukewang.com/52e4b34b0001bb6d00160016.jpg" alt="" />保存</li>
+					<li id="Li4"><img src="http://img.mukewang.com/52e4b3680001424900160016.jpg" alt="" />退出</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$("#divtest").contextMenu('sysMenu', {
+					bindings: {
+						'Li3': function(Item) {
+							$(".tip").show().html("您点击了“保存”项");
+						},
+						'Li4': function(Item) {
+							$(".tip").show().html("您点击了“退出”项");
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

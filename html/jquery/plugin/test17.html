@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>自定义对象级别插件</title>
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+		<script src="http://www.imooc.com/data/jquery.lifocuscolor.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div id="divtest">
+			<div class="title">
+				<span class="fl">对象级别的插件</span>
+			</div>
+			<div class="content">
+				<ul id="u1">
+					<li><span>橘子</span><span>水果</span></li>
+					<li><span>芹菜</span><span>蔬菜</span></li>
+					<li><span>香蕉</span><span>水果</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$('#u1').focusColor('#ccc'); //调用自定义的插件
+			})
+		</script>
+	</body>
+
+</html>

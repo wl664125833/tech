@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>放置插件</title>
+		<meta charset="utf-8" />
+		<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="http://www.imooc.com/data/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+		<style>
+			.focus {
+				background-color: #ccc;
+			}
+			
+			#divtest {
+				width: 282px;
+			}
+			
+			.box {
+				width: 280px;
+				border: solid 1px #eee;
+				margin: 10px 0px;
+			}
+			
+			.box .title {
+				padding: 8px;
+				background-color: Blue;
+				color: #fff;
+				height: 23px;
+				line-height: 23px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			.box .drag {
+				padding: 5px;
+				cursor: move;
+			}
+			
+			.box .drag div {
+				border: solid 1px #fff;
+				background-color: red;
+				color: #fff;
+				cursor: move;
+				width: 35px;
+				padding: 20px;
+				text-align: center;
+			}
+			
+			.box .cart {
+				padding: 5px;
+				cursor: move;
+			}
+			
+			.box .cart div {
+				padding: 5px;
+				height: 55px;
+				text-align: center;
+			}
+			
+			.focus {
+				background-color: #eee;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="divtest">
+			<div class="box">
+				<div class="title">产品区</div>
+				<div class="drag">
+					<div>苹果</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="title">回收站</div>
+				<div class="cart">
+					<div id="tip">还没有产品</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$(".drag").draggable();
+				$(".cart").droppable({
+					drop: function() {
+						$(this)
+							.addClass('focus')
+							.find('#tip').html('');
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>

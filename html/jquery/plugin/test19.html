@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>自定义类级别插件</title>
+        <meta charset="utf-8" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+        <script src="http://www.imooc.com/data/jquery.twoaddresult.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="divtest">
+            <div class="title">
+                <span class="fl">自定义类级别插件</span> 
+                <span class="fr">
+                    <input id="btnCount" type="button" value="计算" />
+                </span>
+            </div>
+            <div class="content">
+                两数相减：
+                <input id="Text1" type="text" class="txt" />
+                -
+                <input id="Text2" type="text" class="txt" />
+                =
+                <input id="Text3" type="text" class="txt" />
+            </div>
+            <span id="test"></span>
+        </div>
+        
+        <script type="text/javascript">
+            $(function () {
+                $("#btnCount").bind("click", function () {
+                    $("#Text3").val(
+                        $.subNum($('#Text1').val(),
+                                 "0"+$('#Text2').val()));
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>图片放大镜插件</title>
+        <meta charset="utf-8" />
+        <link href="http://www.imooc.com/data/jquery.jqzoom.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery.jqzoom.js"></script>
+    </head>
+    
+    <body>
+        <div id="divtest">
+            <div class="title">
+                <span class="fl">图片放大镜</span> 
+            </div>
+            <div class="content">
+                <a href="http://img.mukewang.com/52e4aec90001924d06800599.jpg" id="jqzoom" title="小兔子乖乖">
+                     <img src="http://img.mukewang.com/52e4aee700012df702130212.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            $(function () {
+               //绑定图片放大插件jqzoom
+               $("#jqzoom").jqzoom({
+                    zoomWidth: 123, //小图片所选区域的宽
+                    zoomHeight: 123, //小图片所选区域的高
+                    zoomType: 'reverse' //设置放大镜的类型
+                });
+            });
+        </script>
+    </body>
+</html>

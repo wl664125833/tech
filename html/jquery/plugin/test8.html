@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>使用ajaxSetup()方法设置全局ajax请求默认选项</title>
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<div id="divtest">
+			<div class="title">
+				<span class="fl">奇偶性和是否大于0</span>
+				<span class="fr">
+                    <input id="btnShow_1" type="button" value="验证1" />
+                    <input id="btnShow_2" type="button" value="验证2" />
+                </span>
+			</div>
+			<ul>
+				<li>请求输入一个数字
+					<input id="txtNumber" type="text" size="12" />
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$.ajaxSetup({
+					type: "POST",
+					success: function(data) {
+						$("ul").append("<li>你输入的<b>  " +
+							$("#txtNumber").val() + " </b>是<b> " +
+							data + " </b></li>");
+					}
+				});
+				$("#btnShow_1").bind("click", function() {
+					$.ajax({
+						data: {
+							num: $("#txtNumber").val()
+						},
+						url: "http://www.imooc.com/data/check.php"
+					});
+				})
+				$("#btnShow_2").bind("click", function() {
+					$.ajax({
+						data: {
+							num: $("#txtNumber").val()
+						},
+						url: "http://www.imooc.com/data/check_f.php"
+					});
+				})
+			});
+		</script>
+	</body>
+
+</html>

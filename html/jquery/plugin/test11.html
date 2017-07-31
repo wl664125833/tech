@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>表单插件</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="http://www.imooc.com/data/jquery.form.js"></script>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<form id="frmV" method="post" action="#">
+			<div id="divtest">
+				<div class="title">
+					<span class="fl">个人信息页</span>
+					<span class="fr">
+                        <input id="btnSubmit" type="submit" value="提交" />
+                    </span>
+				</div>
+				<div class="content">
+					<span class="fl">用户名：</span><br />
+					<input id="user" name="user" type="text" /><br />
+					<span class="fl">昵称：</span><br />
+					<input id="nick" name="nick" type="text" />
+					<div class="tip"></div>
+				</div>
+			</div>
+		</form>
+
+		<script type="text/javascript">
+			$(function() {
+				var options = {
+					url: "http://www.imooc.com/data/form_f.php",
+					target: ".tip"
+				}
+				$('#frmV').ajaxForm(options);
+			});
+		</script>
+	</body>
+
+</html>
