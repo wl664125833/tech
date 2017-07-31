@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>获取浏览器名称和版本号</title>
+		<meta charset="utf-8" />
+		<script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<style>
+			#divtest {
+				width: 282px;
+			}
+			
+			#divtest .title {
+				padding: 8px;
+				background-color: Blue;
+				color: #fff;
+				height: 23px;
+				line-height: 23px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			#divtest .content {
+				padding: 8px;
+				background-color: #fff;
+				font-size: 13px;
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="divtest">
+			<div class="title">
+				<span class="fl">获取浏览器名称和版本号</span>
+			</div>
+			<div class="content"></div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				var strTmp = "您的浏览器名称是：";
+				if($.browser.chrome) { //谷歌浏览器
+					strTmp += "Chrome";
+				}
+				if($.browser.mozilla) { //火狐相关浏览器
+					strTmp += "Mozilla FireFox";
+				}
+				strTmp += "<br /><br /> 版本号是：" //获取版本号
+					+
+					$.browser.version;
+				$(".content").html(strTmp);
+			});
+		</script>
+	</body>
+
+</html>
