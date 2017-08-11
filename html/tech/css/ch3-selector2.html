@@ -1,0 +1,241 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/304720 (zh-CN, DDL); Windows/6.1.7601 Service Pack 1 (Win64);"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="2375"/>
+
+<div>
+<span><div><br/></div><table style="-evernote-table:true;border-collapse:collapse;table-layout:fixed;margin-left:0px;width:100%;"><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 :enabled选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">在Web的表单中，有些表单元素有可用（<strong style="font-style: normal; font-weight: 700;">“:enabled”</strong>）和不可用（“<strong style="font-style: normal; font-weight: 700;">:disabled</strong>”）状态，比如输入框，密码框，复选框等。在默认情况之下，这些表单元素都处在可用状态。那么我们可以通过伪选择器“<strong style="font-style: normal; font-weight: 700;">:enabled</strong>”对这些表单元素设置样式。</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">通过“:enabled”选择器，修改文本输入框的边框为2像素的红色边框，并设置它的背景为<strong style="font-style: normal; font-weight: 700;">灰色</strong>。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码:</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;name&quot;&gt;Text Input:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;可用输入框&quot;  /&gt;
+  &lt;/div&gt;
+   &lt;div&gt;
+    &lt;label for=&quot;name&quot;&gt;Text Input:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;禁用输入框&quot;  disabled=&quot;disabled&quot; /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;  
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">CSS代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+div{
+  margin: 20px;
+}
+input[type=&quot;text&quot;]:enabled {
+  background: #ccc;
+  border: 2px solid red;
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">结果演示</strong></p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div><img src="ch3-selector2_files/Image.jpg" type="image/jpeg" style="border: 0px; clear: both;"/></div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 :disabled选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">“<strong style="font-style: normal; font-weight: 700;">:disabled</strong>”选择器刚好与“<strong style="font-style: normal; font-weight: 700;">:enabled</strong>”选择器相反，用来选择不可用表单元素。要正常使用“:disabled”选择器，需要在表单元素的HTML中设置“disabled”属性。</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">通过“<strong style="font-style: normal; font-weight: 700;">:disabled</strong>”选择器，给不可用输入框设置明显的样式。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;我是可用输入框&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;我是不可用输入框&quot; disabled /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;  
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><br/><strong style="font-style: normal; font-weight: 700;">CSS代码</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+form {
+  margin: 50px;
+}
+div {
+  margin-bottom: 20px;
+}
+input {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+input[type=&quot;text&quot;]:disabled {
+  background: rgba(0,0,0,.15);
+  border: 1px solid rgba(0,0,0,.15);
+  color: rgba(0,0,0,.15);
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">结果演示：</strong></p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div><img src="ch3-selector2_files/Image [1].jpg" type="image/jpeg" style="border: 0px; clear: both;"/></div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 :checked选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">在表单元素中，单选按钮和复选按钮都具有<strong style="font-style: normal; font-weight: 700;">选中</strong>和<strong style="font-style: normal; font-weight: 700;">未选中</strong>状态。（大家都知道，要覆写这两个按钮默认样式比较困难）。在CSS3中，我们可以通过状态选择器“:checked”配合其他标签实现<strong style="font-style: normal; font-weight: 700;">自定义样式</strong>。而“<strong style="font-style: normal; font-weight: 700;">:checked</strong>”表示的是选中状态。</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示：</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">通过“:checked”状态来自定义复选框效果。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; id=&quot;usename&quot; /&gt;&lt;span&gt;√&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;lable for=&quot;usename&quot;&gt;我是选中状态&lt;/lable&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;
+      &lt;input type=&quot;checkbox&quot;  id=&quot;usepwd&quot; /&gt;&lt;span&gt;√&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;usepwd&quot;&gt;我是未选中状态&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt; 
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">CSS代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.wrapper {
+  margin-bottom: 10px;
+}
+
+.box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  border: 2px solid orange;
+  vertical-align: middle;
+}
+
+.box input {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.box span {
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  color: orange;
+}
+
+input[type=&quot;checkbox&quot;] + span {
+  opacity: 0;
+}
+
+input[type=&quot;checkbox&quot;]<span style="color: rgb(178, 34, 34);">:checked</span> + span {
+  opacity: 1;
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">结果演示</p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div><img src="ch3-selector2_files/Image [2].jpg" type="image/jpeg" style="border: 0px; clear: both;"/></div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 ::selection选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">“</span><strong style="font-style: normal; font-weight: 700; font-size: 13px;">::selection</strong><span style="font-size: 13px;">”伪元素是用来匹配</span><strong style="font-style: normal; font-weight: 700; font-size: 13px;">突出显示</strong><span style="font-size: 13px;">的文本(用鼠标选择文本时的文本)。浏览器默认情况下，<span style="color: rgb(178, 34, 34);">用鼠标选择</span>网页文本是以“深蓝的背景，白色的字体”显示的，效果如下图所示：</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><a href="http://img.mukewang.com/533e50910001bff808670219.jpg" style="outline: 0px; text-decoration: none; color: rgb(7, 130, 193);"><img src="ch3-selector2_files/Image [3].jpg" type="image/jpeg" style="border: 0px; max-width: 400px; clear: both;"/></a></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">从上图中可以看出，用鼠标选中“专注IT、互联网技术”、“纯干货、学以致用”、“没错、这是免费的”这三行文本中，默认显示样式为：蓝色背景、白色文本。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">有的时候设计要求,不使用上图那种浏览器默认的突出文本效果，需要一个与众不同的效果，此时<span style="color: rgb(178, 34, 34);">“<strong style="font-style: normal; font-weight: 700;">::selection</strong>”</span>伪元素就非常的实用。不过在<strong style="font-style: normal; font-weight: 700;">Firefox浏览器</strong>还需要添加前缀。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示:</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">通过“::selection”选择器，将Web中选中的文本背景变成红色，文本变成绿色。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;p&gt;“::selection”伪元素是用来匹配突出显示的文本。浏览器默认情况下，选择网站文本是深蓝的背景，白色的字体，&lt;/p&gt;
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">CSS代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+::-moz-selection {
+  background: red;
+  color: green;
+}
+::selection {
+  background: red;
+  color: green;
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">结果演示：</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><a href="http://img.mukewang.com/533e52b80001973007260033.jpg" style="outline: 0px; text-decoration: none; color: rgb(7, 130, 193);" target="_blank"><img src="ch3-selector2_files/Image [4].jpg" type="image/jpeg" style="border: 0px; max-width: 400px; clear: both;"/></a></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">注意：</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">1、IE9+、Opera、Google Chrome 以及 Safari 中支持 ::selection 选择器。</p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div>2、Firefox 支持替代的 ::<span style="color: rgb(178, 34, 34);">-moz</span>-selection。</div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 :read-only选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">“<strong style="font-style: normal; font-weight: 700;">:read-only</strong>”伪类选择器用来指定处于只读状态元素的样式。简单点理解就是，元素中设置了“<strong style="font-style: normal; font-weight: 700;">readonly=’readonly’</strong>”</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">通过“:read-only”选择器来设置地址文本框的样式。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;name&quot;&gt;姓名:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;大漠&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;address&quot;&gt;地址:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;address&quot; id=&quot;address&quot; placeholder=&quot;中国上海&quot; <span style="color: rgb(178, 34, 34);"><strong style="font-style: normal; font-weight: 700;">readonly=&quot;readonly&quot;</strong></span> /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;  
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><br/><strong style="font-style: normal; font-weight: 700;">CSS代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+form {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+}
+form &gt; div {
+  margin-bottom: 10px;
+}
+
+input[type=&quot;text&quot;]{
+  border: 1px solid orange;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+input[type=&quot;text&quot;]:-moz-read-only{
+  border-color: #ccc;
+}
+input[type=&quot;text&quot;]:read-only{
+  border-color: #ccc;
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">结果演示</strong></p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div><a href="http://img.mukewang.com/5445d7c30001e3fb03870139.jpg" style="outline: 0px; text-decoration: none; color: rgb(7, 130, 193);"><img src="ch3-selector2_files/Image [5].jpg" type="image/jpeg" style="border: 0px; clear: both; width: 350px;"/></a></div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 :read-write选择器</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><span style="font-size: 13px;">“<strong style="font-style: normal; font-weight: 700;">:read-write</strong>”选择器刚好与“<strong style="font-style: normal; font-weight: 700;">:read-only</strong>”选择器<strong style="font-style: normal; font-weight: 700;">相反</strong>，主要用来指定当元素处于<strong style="font-style: normal; font-weight: 700;"><span style="color: rgb(178, 34, 34);">非只读状态</span></strong>时的样式。</span></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">示例演示</strong></p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">使用“<strong style="font-style: normal; font-weight: 700;">:read-write</strong>”选择器来设置<span style="color: rgb(178, 34, 34);">不是只读控件</span>的文本框样式。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">HTML代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;name&quot;&gt;姓名:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;大漠&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;address&quot;&gt;地址:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;address&quot; id=&quot;address&quot; placeholder=&quot;中国上海&quot; readonly=&quot;readonly&quot; /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;  
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">CSS代码：</strong></p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+form {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+}
+form &gt; div {
+  margin-bottom: 10px;
+}
+
+input[type=&quot;text&quot;]{
+  border: 1px solid orange;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+input[type=&quot;text&quot;]:-moz-read-only{
+  border-color: #ccc;
+}
+input[type=&quot;text&quot;]:read-only{
+  border-color: #ccc;
+}
+
+input[type=&quot;text&quot;]:-moz-read-write{
+  border-color: #f36;
+}
+input[type=&quot;text&quot;]:read-write{
+  border-color: #f36;
+}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><strong style="font-style: normal; font-weight: 700;">结果演示：</strong></p><div style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><div><a href="http://img.mukewang.com/5445d97b0001665203980142.jpg" style="outline: 0px; text-decoration: none; color: rgb(7, 130, 193);"><img src="ch3-selector2_files/Image [6].jpg" type="image/jpeg" style="border: 0px; clear: both; width: 350px;"/></a></div></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><h2 style="margin: 0px 15px; padding: 16px 0px; font-size: 16px; font-weight: 600; border-bottom: 1px solid rgb(208, 214, 217); font-family: 微软雅黑; color: rgb(20, 25, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">CSS3选择器 ::before和::after</h2><div style="margin: 0px; padding: 0px; color: rgb(20, 25, 30); word-break: break-all; font-family: &quot;PingFang SC&quot;, 微软雅黑, &quot;Microsoft YaHei&quot;, Helvetica, &quot;Helvetica Neue&quot;, Tahoma, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="margin: 0px; padding: 0px 15px 15px; word-break: break-all; overflow: hidden; color: rgb(20, 25, 30);"><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">::before和::after这两个主要用来给元素的前面或后面插入内容，这两个常和&quot;content&quot;配合使用，使用的场景最多的就是清除浮动。</p><pre style="margin: 0px; padding: 5px 10px; white-space: pre-wrap; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); word-wrap: break-word; border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; word-break: break-word; display: block;">
+.clearfix::before,
+.clearfix::after {
+    content: &quot;.&quot;;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+</pre><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;"><br/>
+当然可以利用他们制作出其他更好的效果，比如右侧中的阴影效果，也是通过这个来实现的。</p><p style="margin: 0.5em 0px; padding: 5px 0px; color: rgb(31, 36, 38); font-size: 12px;">关键代码分析：</p><div style="margin: 0px; padding: 5px 10px; font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); border-radius: 2px; font-size: 13px; display: block;">.effect<span style="color: rgb(178, 34, 34);">::before</span>, .effect<span style="color: rgb(178, 34, 34);">::after</span>{<br/>
+    <span style="color: rgb(178, 34, 34);">content:&quot;&quot;;</span><br/>
+    position:absolute;<br/>
+    z-index:-1;<br/>
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);<br/>
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);<br/>
+    box-shadow:0 0 20px rgba(0,0,0,0.8);<br/>
+    top:50%;<br/>
+    bottom:0;<br/>
+    left:10px;<br/>
+    right:10px;<br/>
+    -moz-border-radius:100px / 10px;<br/>
+    border-radius:100px / 10px;<br/>
+}<br/></div></div></div></div></td></tr><tr><td style="border-style:solid;border-width:1px;border-color:rgb(211,211,211);padding:10px;margin:0px;width:99.92542878448918%;"><div><br/></div></td></tr></table><div><br/></div></span>
+</div></body></html> 
